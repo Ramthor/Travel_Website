@@ -1,0 +1,83 @@
+@import url(./Css/Home.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --Fira-Sans: "Fira Sans", sans-serif;
+}
+
+.container {
+  width: 1280px;
+  padding: 10px;
+  height: 100%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+    padding: 0px;
+    height: 100%;
+    margin: auto;
+  }
+  [controls] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+    pointer-events: none;
+  }
+  .hc__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  .container {
+    width: 100%;
+    padding: 0px;
+    height: 100%;
+    margin: auto;
+  }
+  [controls] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .container {
+    width: 100%;
+    padding: 0px;
+    height: 100%;
+    margin: auto;
+  }
+  [controls] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+    pointer-events: none;
+  }
+}
